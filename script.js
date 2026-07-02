@@ -123,7 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // If no countdown elements exist, skip
     if (!daysEl && !hoursEl && !minsEl && !secsEl) return;
 
-    const targetDate = new Date('2026-07-18T23:59:59');
+    //const targetDate = new Date('2026-07-18T23:59:59');
+    const targetDate = new Date('2026-07-18T15:00:00');
 
     function pad(n) {
       return String(n).padStart(2, '0');

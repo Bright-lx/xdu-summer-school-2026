@@ -676,11 +676,14 @@ ul {
 /* ===== Organizers ===== */
 .org-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.95fr);
+  grid-template-columns: minmax(0, 1.28fr) minmax(260px, 0.86fr) minmax(0, 1.06fr);
   gap: 20px;
+  align-items: stretch;
 }
 .org-grid > div,
 .org-card {
+  display: flex;
+  flex-direction: column;
   padding: 28px;
   border-radius: var(--radius);
   border: 1px solid var(--line);
@@ -693,6 +696,11 @@ ul {
   color: var(--xidian-dark);
   font-size: 18px;
   font-weight: 800;
+}
+.org-card p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
 }
 .org-grid ul li,
 .org-card ul li {
